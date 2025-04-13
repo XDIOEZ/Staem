@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page pageEncoding="UTF-8" %>
 <html lang="zh-CN">
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -247,6 +252,8 @@
         }
     </style>
 </head>
+
+
 <body>
 <div class="logo-container">
     <h1 class="logo">Staem管家</h1>
@@ -255,20 +262,20 @@
 <div class="login-container">
     <div class="login-title">欢迎回来</div>
 
-    <form action="/login" method="post">
-        <div class="form-group">
+    <form action="/login"  method="post">
+    <div class="form-group">
             <label for="username">用户名</label>
-            <input type="text" id="username" name="username" placeholder="输入您的用户名" required>
+            <input type="text" id="username" name="username" placeholder="输入您的用户名" autocomplete="username" required>
         </div>
 
         <div class="form-group">
             <label for="password">密码</label>
-            <input type="password" id="password" name="password" placeholder="输入您的密码" required>
+            <input type="password" id="password" name="password" placeholder="输入您的密码" autocomplete="current-password" required>
         </div>
 
         <div class="additional-options">
             <div class="remember-me">
-                <input type="checkbox" id="remember">
+                <input type="checkbox" id="remember" name="remember">
                 <label for="remember">记住我</label>
             </div>
             <div class="forgot-password">
@@ -284,4 +291,5 @@
     </form>
 </div>
 </body>
+
 </html>

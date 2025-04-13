@@ -22,8 +22,9 @@
 
     <!-- mapping文件路径配置 -->
     <mappers>
-        <package name="Interface"/>
+        <package name="com.itheima.Interface"/>
         <!-- 自动扫描 GameMapper -->
     </mappers>
+
 
 </configuration>
